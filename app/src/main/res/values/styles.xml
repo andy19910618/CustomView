@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <declare-styleable name="MyProgressBar">
+        <attr name="myProgressBarCirWidth" format="dimension" />
+        <attr name="myProgressBarCircleRadius" format="dimension" />
+        <attr name="myProgressBarLineWidth" format="dimension" />
+        <attr name="myProgressBarTextSize" format="dimension" />
+    </declare-styleable>
+
 </resources>
