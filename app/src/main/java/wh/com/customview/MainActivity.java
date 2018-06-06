@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import wh.com.customview.activity.FirstActivity;
+import wh.com.customview.activity.SecondActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     Context mContext;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         mContext = this;
         ((Button) findViewById(R.id.first)).setOnClickListener(this);
+        ((Button) findViewById(R.id.second)).setOnClickListener(this);
     }
 
     @Override
@@ -24,6 +26,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.first:
                 startActivity(new Intent(mContext, FirstActivity.class));
+                break;
+
+            case R.id.second:
+                startActivity(new Intent(mContext, SecondActivity.class));
                 break;
         }
     }
